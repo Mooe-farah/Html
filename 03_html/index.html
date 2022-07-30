@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mohamed Farah">
+    <meta name="description" content="This page contains all elememts of html course">
+    <!--relative reference-->
+    <link rel="stylesheet" href="main.css">
+    <title>My First Web Page</title>
+</head>
+<body>
+    <header>
+    <h1>My Goals of the Year</h1>
+
+    <hr>
+    <nav aria-label="primary-navigation">
+        <ul>
+            <!--this internal reference link-->
+            <li><a href="#html">Learn Html</a></li>
+            <li><a href="#vacation">Planning on vacation</a></li>
+            <li><a href="#contact">contact me</a></li>
+        </ul>
+    </nav>
+</header>
+    <hr>
+
+<section id="html">
+    <h2>I'm Ready to learn Html</h2>
+    <p>This is my first web page</p>
+    <!--adding images-->
+ <figure>
+        <img src="Img/html5logo.png" alt="HTML5 Logo" width="250"
+        height="250" title="I'm Learning Html5">
+        <figcaption>
+            Html5 Logo
+        </figcaption>
+</figure>
+    
+    <h3>My Daily Schedule</h3>
+    <p>Let me tell you how I...
+        <br>&nbsp;...I learn more about web dev.
+        <br>&nbsp;...I plan out my schedule.
+        <br>&nbsp;...I use resources from<abbr title="Mozilla Developer Network">
+         <!--this ia absolute reference -->  <a href="https://developer.mozilla.org/">MDN</a> </abbr> 
+    </p>
+</section>
+
+    <hr>
+<section id="vacation">
+    <h2>I am Also Planning a Vacation</h2>
+    <p>I've been working hard and really want a getway period</p>
+    <p>I live in <abbr title="Nairobi">NBR</abbr> so I want to visit a bach.</p>
+
+    <h3> Places I'd like to visit</h3>
+    <p>I've heard good things about the caribbean</p>
+    <figure>
+        <img src="img/vacation.jpg" alt="vacation" width="255" height="255">
+        <figcaption>
+            Caribbean Beach Getway
+        </figcaption>
+    </figure>
+
+    <h4>My Weekend Goals</h4>
+    <p>I've heard good things about Diani Beach Resort</p>
+    <p>Things I'd like to do on weekends!</p>
+    <figure>
+    <img src="img/Dianibeach.jpg" alt="Diani Beach" width="250" height="250">
+    <figcaption>
+        Diani Beach
+    </figcaption>
+    </figure>
+      <!--ordered lists-->
+        <ol>
+            <li>Code</li>
+            <li>Watch Favourite shows</li>
+            <li>Football</li>
+            <li>Swim</li>
+            <li>Eating</li>
+            <li>Others</li>
+
+        </ol>
+        <!--Unordered List tpyes of fruits-->
+        <p>Favourite Fruits</p>
+        <ul>
+            <li>Mango</li>
+            <li>Oranges</li>
+            <li>Apple</li>
+        <!-- <ul>
+            <li>Lemon</li>
+            <li>Grippes</li>
+            <li>Pineapple</li>
+        </ul> -->
+
+        </ul>
+
+        <!--description lists vehicles-->
+        <p>Dream Cars</p>
+        <dl>
+            <dt>Nissan</dt>
+            <dd>Nissan X-trail</dd>
+            <dd>Nissan juke</dd>
+            <dd>Nissan note</dd>
+
+            <dt>Range Rover</dt>
+            <dd>Ranger Evoque</dd>
+            <dd>Ranger Sport</dd>
+            <dd>Ranger Velar</dd>
+
+        </dl>
+    </section>
+
+    <!--semantic tags-->
+    <aside>
+        <details>
+            <summary>Guess the <mark> number of hours </mark>I code per day</summary>
+            <p>I started <mark> 10am and I code 2hours</mark> every night</p>
+        </details>
+    </aside>
+    <br>
+    <!--creating tables-->
+    <table>
+        <caption>My Schedule</caption>
+        <thead>
+        <tr>
+            
+            <th>Time</th>
+            <th>Activity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            
+            <td>
+                <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                <td>Write Code</td>
+
+            </td>
+        </tr>
+       
+        <tr>
+            
+            <td>
+                <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+                <td>Eat Lunch</td>
+            </td>
+        </tr>
+        <tr>
+            
+            <td>
+                <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
+                <td>Others</td>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2"> I play football,code ,eat,sleep in 5 days a week</td>
+        </tr>
+    </tfoot>
+    
+    </table>
+
+    <hr>
+    <article id="contact">
+        <h3>Contact Me</h3>
+        <p>I'd really like to hear from you</p>
+        <form action="https://httpbin.org/get" method="get"> 
+        </form> 
+               <fieldset>
+                <legend>Personal Info</legend>
+            <p>
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="firstName" autocomplete="on" required autofocus>
+        </p>
+        <p>
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" placeholder="lastName" autocomplete="on" required>
+        </p>
+        <p>
+            <label for="Password">Password:</label>
+            <input type="password" name="Password" id="Password" placeholder="password" autocomplete="on">
+        </p>
+        <p>
+            <label for="Phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="telphone number" autocomplete="on" required>
+        </p>
+        <p>
+            <label for="decade">Favourite Decade:</label>
+            <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
+        </p>
+       
+
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>What is your favourite food?</legend>
+        <p>
+            <input type="radio" name="food" id="meat" value="meat">
+            <label for="meat">Meat</label>
+        </p>
+        <p>
+            <input type="radio" name="food" id="pizza" value="pizza">
+            <label for="pizza">Pizza</label>
+        </p>
+        <p>
+            <input type="radio" name="food" id="burger" value="burger">
+            <label for="burger">Burger</label>
+        </p>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Do you have pets?</legend>
+        <p>
+            <input type="checkbox" name="pets" id="dog" value="dog">
+            <label for="dog">Dog</label>
+        </p>
+        <p>
+            <input type="checkbox" name="pets" id="cat" value="cat">
+            <label for="cat">Cat</label>
+        </p>
+        <p>
+            <input type="checkbox" name="pets" id="horse" value="horse">
+            <label for="horse">Horse</label>
+        </p>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Send Me A Note</legend>
+        <label for="message">Your Message</label>
+        <br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+    </fieldset>
+    <br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+
+    </article>
+<br>
+        &lt;&lt;&lt; &copy;<a href="About.html">Mohamed Farah 2022</a>&gt;&gt;&gt;
+
+    <p>
+        <a href="#">Back to Top</a>
+    </p>
+    
+</body>
+</html> 

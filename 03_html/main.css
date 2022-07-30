@@ -1,0 +1,41 @@
+html{
+    font-size: 15px;
+}
+body{
+    background-color: #333;
+    color: whitesmoke;
+}
+
+a{
+    color: aliceblue;
+}
+a:visited{
+ color:lightgray;
+}
+a:hover{
+    color: #eee;
+}
+a:active{
+    color: aqua;
+}
+
+table tr,th,td,caption{
+border: 1px solid #eee;
+font-family: 'Courier New', Courier, monospace;
+border-collapse: collapse;
+padding: 0.5rem;
+
+
+}
+
+
+p{
+    color: palegoldenrod;
+}
+body{
+    color: aqua;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 2em;
+}
+
